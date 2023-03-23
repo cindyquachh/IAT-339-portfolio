@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+
+    <meta charset="utf-8">
+    <title>Chronos Style Guide</title>
+
+    <link href="../css/main.css" rel="stylesheet">
+
+</head>
+<div class="navigation-bar">
+
+
+    <div id="navigation-container">
+
+        <img src="../images/CHRONOS.png" width="12%">
+
+
+        <ul>
+            <li><a href="../pages/style.html">Style</a></li>
+            <li><a href="../pages/home.html">Home</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<body>
+
+    <div class="style">
+
+
+        <section class="element">
+            <h3>Fonts, Logo, Colours</h3>
+
+            <img src="../images/chronosSG.png" alt="style guide" class="image">
+
+        </section>
+
+        <!-- INTERACTIVE ELEMENTS SECTION // -->
+        <section id="interactive_elements">
+            <h2>Interactive Elements</h2>
+
+            <!-- IN-TEXT LINK // -->
+
+            <section class="element">
+                <h3>In-text link</h3>
+
+                <h4>CSS selector:</h4>
+                <p>.link a</p>
+
+                <h4>Sample code:</h4>
+                <code>
+            &lt;div class=&quot;link&quot;&gt;<br>
+            &lt;a href=&quot;#&quot;&gt;In-Text Link&lt;/a&gt;<br>
+            &lt;/div&gt;<br>
+          </code>
+
+                <h4>Rendered element:</h4>
+                <div class="link">
+                    <a href="#">In-Text Link</a>
+                </div>
+            </section>
+
+
+            <!-- Default Button styling section -->
+
+            <!-- NAVIGATION LINK -->
+            <!-- did not draw from resource -->
+            <section class="element">
+
+                <h3>Navigation Link</h3>
+
+                <h4>CSS selector:</h4>
+                <p>#navigation-container, #navigation-bar</p>
+
+                <h4>Sample code:</h4>
+                <code>
+            &lt;div class=&quot;navigation-bar&quot;&gt;<br>
+            &lt;ul&gt;<br>
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+            &lt;/div&gt;<br>
+          </code>
+
+                <h4>Rendered element:</h4>
+                <div class="navigation-bar-sample">
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- SUBMIT/RESET BUTTONS LINK -->
+            <!-- did not draw from resource -->
+            <section class="element">
+                <h3>Submit/Reset Buttons</h3>
+
+                <h4>CSS selector:</h4>
+                <p>.button</p>
+
+                <h4>Sample code:</h4>
+                <code>
+            &lt;form&gt;<br>
+            &lt;input type=&quot;button&quot; class=&quot;button&quot; value=&quot;SUBMIT&quot;&gt;<br>
+            &lt;input type=&quot;button&quot; class=&quot;button&quot; value=&quot;RESET&quot;&gt;<br>
+            &lt;/form&gt;<br>
+          </code>
+
+                <h4>Rendered element:</h4>
+                <form>
+                    <input type="button" class="button" value="SUBMIT">
+                    <input type="button" class="button" value="RESET">
+                </form>
+            </section>
+
+            <!-- TEXT INPUT WITH LABEL LINK -->
+
+            <section class="element">
+                <h3>Text Input Field with Label</h3>
+
+                <h4>CSS selector:</h4>
+                <p>label, input</p>
+
+                <h4>Sample code:</h4>
+                <code>
+            &lt;label for=&quot;fname&quot;&gt;First name:&lt;/label&gt;<br>
+            &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot;&gt;<br>
+          </code>
+                <h4>Rendered element:</h4>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname">
+            </section>
+
+            <!-- RADIO BUTTON WITH LABEL LINK -->
+            <!-- https://www.w3schools.com/tags/att_input_type_radio.asp -->
+            <section class="element">
+                <h3>Radio Button with Label</h3>
+
+                <h4>CSS selector:</h4>
+                <p>input, label</p>
+
+                <h4>Sample code:</h4>
+                <code>
+            &lt;input type=&quot;radio&quot; id=&quot;radio1&quot; name=&quot;fav_language&quot;
+            value=&quot;RADIO1&quot;&gt;
+            &lt;label for=&quot;radio1&quot;&gt;Radio 1&lt;/label&gt;<br>
+            &lt;input type=&quot;radio&quot; id=&quot;radio2&quot; name=&quot;fav_language&quot;
+            value=&quot;RADIO2&quot;&gt;
+            &lt;label for=&quot;radio2&quot;&gt;Radio 2&lt;/label&gt;<br>
+            &lt;input type=&quot;radio&quot; id=&quot;radio3&quot; name=&quot;fav_language&quot;
+            value=&quot;RADIO3&quot;&gt;
+            &lt;label for=&quot;radio3&quot;&gt;Radio 3&lt;/label&gt;
+          </code>
+
+                <h4>Rendered element:</h4>
+                <input type="radio" id="radio1" name="fav_language" value="RADIO1">
+                <label for="radio1">Radio 1</label><br>
+                <input type="radio" id="radio2" name="fav_language" value="RADIO2">
+                <label for="radio2">Radio 2</label><br>
+                <input type="radio" id="radio3" name="fav_language" value="RADIO3">
+                <label for="radio3">Radio 3</label>
+            </section>
+
+            <!-- IMAGE AS LINK -->
+
+            <section class="element">
+                <h3>Image as a Link</h3>
+
+                <h4>CSS selector:</h4>
+                <p>image, container</p>
+
+                <h4>Sample code:</h4>
+                <code>
+            &lt;div class=&quot;container&quot;&gt;<br>
+            &lt;img src=&quot;watch.jpg&quot; alt=&quot;watch&quot; class=&quot;image&quot;&gt;<br>
+            &lt;div class=&quot;overlay&quot;&gt;<br>
+            &lt;a href=&quot;#&quot;class=&quot;text&quot;&gt;Orient Submariner III&lt;/a&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+          </code>
+
+                <h4>Rendered element:</h4>
+                <div class="container">
+                    <img src="../images/watch5.jpg" alt="watch" class="image">
+                    <div class="overlay">
+                        <a href="contemp.html" class="text">Contemporary</a>
+                    </div>
+            </section>
+
+
+        </section>
+        <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+        <!-- TEXT ELEMENTS SECTION // -->
+
+        <!-- HEADINGS -->
+        <!-- did not draw from resource -->
+        <section id="text_elements">
+            <h2>Text Elements</h2>
+
+            <section class="element">
+                <h3>Headings</h3>
+
+                <h4>CSS selector:</h4>
+                <p>h1, h2, h3, h4</p>
+
+                <h4>Sample code:</h4>
+                <code>
+            &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+            &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+            &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+            &lt;h4&gt;Heading 4&lt;/h4&gt;<br>
+          </code>
+
+                <h4>Rendered element:</h4>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+            </section>
+
+            <!-- PARAGRAPH -->
+            <!-- did not draw from resource -->
+            <section class="element">
+                <h3>Paragraphs</h3>
+
+                <h4>CSS selector:</h4>
+                <p>p</p>
+
+                <h4>Sample code:</h4>
+                <code>
+            &lt;p&gt;<br>
+            &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.&quot;<br>
+            &lt;/p&gt;
+          </code>
+                <h4>Rendered element:</h4>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id
+                    est laborum."
+                </p>
+            </section>
+
+            <!-- NUMBERED LISTS -->
+
+            <section class="element">
+                <h3>Numbered Lists</h3>
+
+                <h4>CSS selector:</h4>
+                <p>ol, li</p>
+
+                <h4>Sample code:</h4>
+                <code>
+            &lt;ol type=&quot;1&quot;&gt;<br>
+            &lt;li&gt;Orient Submariner&lt;/li&gt;<br>
+            &lt;li&gt;Rolex GMT-Master II&lt;/li&gt;<br>
+            &lt;li&gt;Rolex Day-Date 40&lt;/li&gt;<br>
+            &lt;/ol&gt;
+          </code>
+                <h4>Rendered element:</h4>
+                <ol type="1">
+                    <li>Orient Submariner</li>
+                    <li>Rolex GMT-Master II</li>
+                    <li>Rolex Day-Date 40</li>
+                </ol>
+            </section>
+
+        </section>
+        <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+        <!-- COMBINED ELEMENTS SECTION // -->
+        <section id="combined_elements">
+            <h2>Combined Elements</h2>
+
+            <section class="element">
+                <h3>Main Navigation</h3>
+
+                <h4>CSS selector:</h4>
+                <p>.navigation-bar, navigation-container</p>
+
+                <h4>Sample code:</h4>
+                <code>
+            &lt;div class=&quot;navigation-bar&quot;&gt;<br>
+            &lt;div id=&quot;navigation-container&quot;&gt;<br>
+            &lt;img src=&quot;css/CHRONOS.png&quot; width=&quot;15%&quot;&gt;<br>
+            &lt;ul&gt;<br>
+            &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Style Guide&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;li&gt;&lt;a href=&quot;product_listing.html&quot;&gt;Product Listing Template&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;li&gt;&lt;a href=&quot;checkout.html&quot;&gt;Checkout Template&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+          </code>
+                <h4>Rendered element:</h4>
+            </section>
+            <div class="navigation-bar-sample">
+                <div id="navigation-container-sample">
+                    <img src="../images/CHRONOS.png" width="15%">
+                    <ul>
+                        <li><a href="pages/index.html">Style Guide</a></li>
+                        <li><a href="pages/product_listing.html">Product Listing Template</a></li>
+                        <li><a href="pages/checkout.html">Checkout Template</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+</html>
