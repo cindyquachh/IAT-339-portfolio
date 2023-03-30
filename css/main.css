@@ -516,3 +516,22 @@ p {
     object-fit: cover;
     margin: auto;
 }
+
+
+.contact p {
+    margin-top: 10%;
+
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 15%;
+}
+
+.contact {
+    margin-right: 15%;
+    margin-left: 15%;
+
+}
+
+.contactme {
+    text-align: center;
+}
